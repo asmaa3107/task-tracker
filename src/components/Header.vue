@@ -1,16 +1,25 @@
 <template>
     <header>
-        <h1>Time Tracker</h1>
+        <h1>{{title}}</h1>
     </header>
+    <Button text="add new task"/>
 </template>
-<!-- =============== -->
+<!-- =========================== -->
 <script>
+import Button from './Button'
+
 export default {
     name: 'Header',
+    props:{
+        title : String,
+    },
+    components:{
+        Button
+    }
 }
 
 </script>
-
+<!-- ========================== -->
 <style scoped>
 header{
  display: flex;

@@ -1,11 +1,10 @@
 
 
 <template>
-  <div>Hi</div>
-  <Header />
+  <Header title="welcome"/>
   <Footer />
 </template>
-
+<!-- ================================= -->
 <script>
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -17,7 +16,7 @@ export default {
   }
 }
 </script>
-
+<!-- ================================== -->
 
 <style>
   @import './assets/css/style.css';
