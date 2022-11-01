@@ -1,8 +1,9 @@
 <template>
     <header>
         <h1>{{title}}</h1>
-    </header>
-    <Button text="add new task"/>
+    <Button text="add task" color="green" />  
+ </header>
+ 
 </template>
 <!-- =========================== -->
 <script>
@@ -21,9 +22,5 @@ export default {
 </script>
 <!-- ========================== -->
 <style scoped>
-header{
- display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;}
+@import '../assets/css/header.css';
 </style>

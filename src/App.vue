@@ -1,8 +1,10 @@
 
 
 <template>
-  <Header title="welcome"/>
-  <Footer />
+  <div class="container">
+    <Header title="Task Tracker"/>
+    <Footer />
+  </div>
 </template>
 <!-- ================================= -->
 <script>
