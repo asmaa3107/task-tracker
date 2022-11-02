@@ -13,6 +13,7 @@
     },
     methods: {
       onClick() {
+        console.log('clik!')
         this.$emit('btn-click')
       },
     },
