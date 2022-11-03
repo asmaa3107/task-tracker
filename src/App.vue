@@ -2,7 +2,7 @@
 
 <template>
   <div class="container">
-    <Header title="Task Tracker" @toggle-add-task="toggleAddTask" :showHidetoggleBtn='showHidetoggleBtn'/>  
+    <Header title="Task Tracker" @toggle-add-task="toggleAddTask" :showAddTask='showAddTask'/>  
     <div v-if="this.showAddTask">
       <AddTask @add-task='addTask'/>
     </div>
