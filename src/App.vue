@@ -3,7 +3,7 @@
 <template>
   <div class="container">
     <Header title = "Task Tracker" />
-    <Tasks  :tasks = "tasks" />
+    <Tasks @delete-task="deleteTask" :tasks = "tasks" />
     <Footer />
   </div>
 </template>
@@ -18,6 +18,12 @@ export default {
     Header,
     Footer,
     Tasks
+  },
+  methods:{
+    deleteTask (id) {
+      console.log(id);
+      this.tasks = this.tasks.filter ((task) => task.id !== id);
+    }
   },
   data() {
     return {
