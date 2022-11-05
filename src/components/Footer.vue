@@ -1,13 +1,13 @@
 <template>
     <footer>
       <p>Copyright &copy; 2021</p>
-      <!-- <router-link to="/about">About</router-link> -->
+      <router-link to="/about">About</router-link>
     </footer>
   </template>
   
   <style scoped>
   a {
-    color: #333;
+    color: rgb(61, 118, 241);
   }
   
   footer {
