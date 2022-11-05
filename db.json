@@ -4,19 +4,25 @@
       "id": 1,
       "text": "dotor appointment",
       "day": "Marh  1st at 2:30",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
       "text": "Grocery shopping",
       "day": "April  1st at 2:30",
-      "reminder": true
+      "reminder": false
     },
     {
-      "id": 3,
-      "text": "Hangout with freinds",
-      "day": "Auges t 1st at 2:30",
-      "reminder": false
+      "text": "doctor",
+      "day": "Augest 2nd 6:00",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "ewe",
+      "day": "34",
+      "reminder": true,
+      "id": 5
     }
   ]
 }

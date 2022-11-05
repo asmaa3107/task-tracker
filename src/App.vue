@@ -34,14 +34,19 @@ export default {
     },
     // =====================================
     async toggleTask(id) {
-    const res = await fetch(`api/taks/${id}`,{
-      method:'POST',
-      headers: {
+      const tasktoUPT = await this.fetchdatabyid(id);
+      const updatetask = { ...tasktoUPT, reminder: !tasktoUPT.reminder };
+      //send data to api 
+      const res = await fetch(`api/tasks/${id}`, {
+        method: 'PUT',
+        headers: {
           'Content-type': 'application/json',
         },
-        body:JSON.stringify(id)
-    });
-    res.status === 200 ? this.tasks = this.tasks.map((task) => (task.id === id) ? { ...task, reminder: !task.reminder } : task) : alert('error happen when update');
+        body: JSON.stringify(updatetask)
+      });
+      const data = await res.json();
+      // update current list 
+      this.tasks = this.tasks.map((task) => task.id === id ? { ...task, reminder : data.reminder } : task);
     },
     // =====================================
     async addTask(newtask) {
